@@ -50,24 +50,22 @@ setInterval(update, 500);
 -->
 </head>
 <body>
-  <div class="flex flex-col items-center absolute w-full bg-[url('brollop-inbjudan-baksida.png')] bg-contain">
-    <nav class="flex-no-wrap fixed top-0 flex flex-row gap-8 w-full items-center justify-between shadow-md shadow-black/5 text-xl bg-white py-4 z-10">
-        <div class="grow"></div>
+  <div class="flex flex-col items-center absolute w-full bg-[url('brollop-inbjudan-baksida.png')] bg-contain overflow-x-hidden">
+    <nav class="flex flex-row flex-no-wrap lg:gap-8 gap-4 place-content-center fixed top-0 w-full overflow-x-scroll shadow-md shadow-black/5 lg:text-xl text-md bg-white lg:py-4 py-2 px-2 z-10">
         <a class="flex hover:font-bold" href="#start">Start</a>
         <a class="flex hover:font-bold" href="#vigsel">Vigsel</a>
         <a class="flex hover:font-bold" href="#festen">Festen</a>
         <a class="flex hover:font-bold" href="#detaljer">Detaljer</a>
         <a class="flex hover:font-bold" href="#gyckel">Tal</a>
         <a class="flex hover:font-bold" href="#osa">OSA</a>
-        <div class="grow"></div>
     </nav>
     <div class="flex flex-col gap-y-28 max-w-screen-md m-10 mt-40 px-20 items-center">
       <header class="relative flex flex-col items-center w-full p-10 bg-white border border-black">
         <div id="start" class="absolute top-[-100px]"></div>
-        <img class="pt-8" src="viskagiftaoss.png" alt="Vi ska gifta oss" />
-        <h1 class="text-6xl font-batang text-neutral-800 my-8">OSCAR & LOVISA</h1>
-        <div class="text-4xl font-pompiere text-neutral-700">28 SEPTEMBER</div>
-        <div class="text-4xl font-pompiere text-neutral-700">2024</div>
+        <img class="lg:pt-8 pt-4" src="viskagiftaoss.png" alt="Vi ska gifta oss" />
+        <h1 class="lg:text-6xl text-4xl font-batang text-neutral-800 my-8">OSCAR & LOVISA</h1>
+        <div class="lg:text-4xl text-2xl font-pompiere text-neutral-700">28 SEPTEMBER</div>
+        <div class="lg:text-4xl text-2xl font-pompiere text-neutral-700">2024</div>
         <img class="pt-8" src="oss.jpg" alt="Oss" />
       </header>
 
@@ -103,7 +101,7 @@ setInterval(update, 500);
               </div>
               <div class="grid justify-items-center">
                 <span class="text-lg">minuter</span>
-              </div>
+              </div>file:///home/oscar/dev/tor-oscar.github.io/index.html#start
           </div>
           <div class="flex flex-col">
               <div class="grid justify-items-center">
@@ -120,7 +118,7 @@ setInterval(update, 500);
       <section class="relative flex flex-col w-full p-10 bg-white border border-black">
         <div id="vigsel" class="absolute top-[-100px]"></div>
         <div class="flex flex-col items-center">
-          <h2 class="text-5xl font-batang text-neutral-800 mb-8">
+          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
             Vigsel
           </h2>
         </div>
@@ -128,7 +126,7 @@ setInterval(update, 500);
           <img class="object-contain" src="klosterkyrkan.jpg" alt="Klosterkyrkan" />
         </div>
         <div class="my-8">
-          <h3 class="text-3xl font-batang text-neutral-800 mb-8">
+          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-8">
             13:30 - Vigsel i Klosterkyrkan
           </h3>
           <div>
@@ -149,7 +147,7 @@ setInterval(update, 500);
       <section class="relative flex flex-col w-full p-10 bg-white border border-black">
         <div id="festen" class="absolute top-[-100px]"></div>
         <div class="flex flex-col items-center">
-          <h2 class="text-5xl font-batang text-neutral-800 mb-8">
+          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
             Festen
           </h2>
         </div>
@@ -157,7 +155,7 @@ setInterval(update, 500);
           <img class="object-contain" src="lillegard.jpg" alt="Lillegård" />
         </div>
         <div class="flex flex-col gap-3 my-8">
-          <h3 class="text-3xl font-batang text-neutral-800 mb-8">
+          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-8">
             17:00 - Middag och fest på Lillegård
           </h3>
           <div>
@@ -181,13 +179,13 @@ setInterval(update, 500);
       <section class="relative flex flex-col w-full p-10 bg-white border border-black">
         <div id="detaljer" class="absolute top-[-100px]"></div>
         <div class="flex flex-col items-center">
-          <h2 class="text-5xl font-batang text-neutral-800 mb-8">
+          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
             Detaljer
           </h2>
         </div>
         <div class="flex flex-col gap-6 my-8">
           <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-user-tie text-6xl text-[#dcafcf]"></i>
+            <i class="flex-none w-20 fa-solid fa-user-tie lg:text-6xl text-4xl text-[#dcafcf]"></i>
             <div class="">
               <h3 class="text-2xl font-batang text-neutral-800 mb-2">
                 Klädkod
@@ -196,7 +194,7 @@ setInterval(update, 500);
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-bus text-6xl text-[#c5d6c5]"></i>
+            <i class="flex-none w-20 fa-solid fa-bus lg:text-6xl text-4xl text-[#c5d6c5]"></i>
             <div class="">
               <h3 class="text-2xl font-batang text-neutral-800 mb-2">
                 Transport
@@ -212,7 +210,7 @@ setInterval(update, 500);
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-children text-6xl text-[#fbcd9a]"></i>
+            <i class="flex-none w-20 fa-solid fa-children lg:text-6xl text-4xl text-[#fbcd9a]"></i>
             <div class="">
               <h3 class="text-2xl font-batang text-neutral-800 mb-2">
                 Barn
@@ -221,7 +219,7 @@ setInterval(update, 500);
             </div>
           </div>
           <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-gifts text-6xl text-[#c7cae3]"></i>
+            <i class="flex-none w-20 fa-solid fa-gifts lg:text-6xl text-4xl text-[#c7cae3]"></i>
             <div class="">
               <h3 class="text-2xl font-batang text-neutral-800 mb-2">
                 Gåvor
@@ -235,7 +233,7 @@ setInterval(update, 500);
       <section class="relative flex flex-col w-full p-10 bg-white border border-black">
         <div id="gyckel" class="absolute top-[-100px]"></div>
         <div class="flex flex-col items-center">
-          <h2 class="text-5xl font-batang text-neutral-800 mb-8">
+          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
             Tal och gyckel
           </h2>
         </div>
@@ -247,7 +245,7 @@ setInterval(update, 500);
       <section class="relative flex flex-col w-full p-10 bg-white border border-black">
         <div id="osa" class="absolute top-[-100px]"></div>
         <div class="flex flex-col items-center">
-          <h2 class="text-5xl font-batang text-neutral-800 mb-8">
+          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
             OSA
           </h2>
         </div>
