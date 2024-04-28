@@ -4,21 +4,23 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="sv">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="favicon.jpg" sizes="32x32">
 <meta name="application-name" content="lomasback">
 <title>Oscar & Lovisa</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/991a27d3ca.js" crossorigin="anonymous"></script>
 <style>
+@font-face {
+  font-family: "GowunBatang";
+  src: url("GowunBatang-Regular.ttf");
+}
   body {
-    font-family: Open Sans;
+    font-family: "GowunBatang";
+    font-weight: 400;
   }
 
   .font-batang {
-    font-family: Batang;
+    font-family: "GowunBatang";
     font-weight: 400;
   }
 
@@ -26,28 +28,6 @@
     font-family: Pompiere;
   }
 </style>
-<!--
-<script>
-let to = new Date("2024-09-28T13:30:00+02:00").getTime();
-let second = 1000;
-let min = 60 * second;
-let hour = 60 * min;
-let day = 24 * hour;
-let update = function () {
-  let now = new Date().getTime()
-  let diff = to - now;
-  let days = Math.floor(diff / day);
-  let hours = Math.floor((diff - day * days) / hour);
-  let mins = Math.floor((diff - hour * hours - day * days) / min);
-  let seconds = Math.floor((diff - min * mins - hour * hours - day * days) / second);
-  document.getElementById("cd-days").innerHTML = "" + days;
-  document.getElementById("cd-hours").innerHTML = "" + hours;
-  document.getElementById("cd-mins").innerHTML = "" + mins;
-  document.getElementById("cd-secs").innerHTML = "" + seconds;
-};
-setInterval(update, 500);
-</script>
--->
 </head>
 <body>
   <div class="flex flex-col items-center absolute w-full bg-[url('brollop-inbjudan-baksida.png')] bg-contain overflow-x-hidden">
@@ -59,197 +39,131 @@ setInterval(update, 500);
         <a class="flex hover:font-bold" href="#gyckel">Tal</a>
         <a class="flex hover:font-bold" href="#osa">OSA</a>
     </nav>
-    <div class="flex flex-col gap-y-28 max-w-screen-md m-10 mt-40 px-20 items-center">
-      <header class="relative flex flex-col items-center w-full p-10 bg-white border border-black">
+    <div class="flex flex-col gap-y-28 max-w-screen-md px-10 py-14 items-center">
+      <header class="relative flex flex-col items-center w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="start" class="absolute top-[-100px]"></div>
-        <img class="lg:pt-8 pt-4" src="viskagiftaoss.png" alt="Vi ska gifta oss" />
-        <h1 class="lg:text-6xl text-4xl font-batang text-neutral-800 my-8">OSCAR & LOVISA</h1>
-        <div class="lg:text-4xl text-2xl font-pompiere text-neutral-700">28 SEPTEMBER</div>
-        <div class="lg:text-4xl text-2xl font-pompiere text-neutral-700">2024</div>
+        <img class="" src="viskagiftaoss.png" alt="Vi ska gifta oss" />
+        <h1 class="text-center lg:text-6xl text-2xl font-batang text-neutral-800 my-8">
+          OSCAR &amp;&nbsp;LOVISA
+        </h1>
+        <div class="lg:text-4xl text-xl font-batang text-neutral-700">28 september</div>
+        <div class="lg:text-4xl text-xl font-batang text-neutral-700">2024</div>
         <img class="pt-8" src="oss.jpg" alt="Oss" />
       </header>
 
-      <!--
-      <section class="flex flex-col items-center">
-        <img class="max-w-[30%]" src="ringar.jpg" alt="Ringar" />
-      </section>
-      -->
-
-      <!--
-      <section class="flex flex-col items-center">
-        <div class="flex flex-row w-full gap-12 justify-between items-center px-20 text-neutral-700">
-          <div class="flex-none scroll-to-id" id="nedrakning"></div>
-          <div class="flex flex-col">
-              <div class="grid justify-items-center">
-                <div id="cd-days" class="text-5xl font-pompiere font-bold"></div>
-              </div>
-              <div class="grid justify-items-center">
-                <span class="text-lg">dagar</span>
-              </div>
-          </div>
-          <div class="flex flex-col">
-              <div class="grid justify-items-center">
-                <div id="cd-hours" class="text-5xl font-pompiere font-bold"></div>
-              </div>
-              <div class="grid justify-items-center">
-                <span class="text-lg">timmar</span>
-              </div>
-          </div>
-          <div class="flex flex-col">
-              <div class="grid justify-items-center">
-                <div id="cd-mins" class="text-5xl font-pompiere font-bold"></div>
-              </div>
-              <div class="grid justify-items-center">
-                <span class="text-lg">minuter</span>
-              </div>file:///home/oscar/dev/tor-oscar.github.io/index.html#start
-          </div>
-          <div class="flex flex-col">
-              <div class="grid justify-items-center">
-                <div id="cd-secs" class="text-5xl font-pompiere font-bold"></div>
-              </div>
-              <div class="grid justify-items-center">
-                <span class="text-lg">sekunder</span>
-              </div>
-          </div>
-        </div>
-      </section>
-      -->
-
-      <section class="relative flex flex-col w-full p-10 bg-white border border-black">
+      <section class="relative flex flex-col w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="vigsel" class="absolute top-[-100px]"></div>
-        <div class="flex flex-col items-center">
-          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
-            Vigsel
-          </h2>
-        </div>
+        <h2 class="text-center lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
+          Vigsel
+        </h2>
+        <img class="object-contain mb-8" src="klosterkyrkan.jpg" alt="Klosterkyrkan" />
         <div class="">
-          <img class="object-contain" src="klosterkyrkan.jpg" alt="Klosterkyrkan" />
-        </div>
-        <div class="my-8">
-          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-8">
+          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-4">
             13:30 - Vigsel i Klosterkyrkan
           </h3>
-          <div>
+          <div class="font-batang">
           Halv två börjar vår vigsel i Klosterkyrkan, Lund. Kyrkan ligger ett
           stenkast från Lund C och är på gångavstånd om du kommer med tåg eller
           buss. Kör du bil finns en stor parkering precis utanför.
           </div>
-          <div>
+          <div class="mt-4">
           Adress: Trollebergsvägen 4, 222 29, Lund.
           </div>
           <div>
-            <a href="https://maps.app.goo.gl/HTe3bjdNdAEwsxZg8">Google Maps</a>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8992.484963208602!2d13.1860233!3d55.7042643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465397dbb4237065%3A0x81baadecfa709d32!2sSt.%20Peter&#39;s%20Priory%2C%20Lund!5e0!3m2!1sen!2sse!4v1713905718545!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <a class="underline text-sky-900" href="https://maps.app.goo.gl/HTe3bjdNdAEwsxZg8">Google Maps</a>
           </div>
         </div>
       </section>
 
-      <section class="relative flex flex-col w-full p-10 bg-white border border-black">
+      <section class="relative flex flex-col w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="festen" class="absolute top-[-100px]"></div>
-        <div class="flex flex-col items-center">
-          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
-            Festen
-          </h2>
-        </div>
-        <div class="">
-          <img class="object-contain" src="lillegard.jpg" alt="Lillegård" />
-        </div>
-        <div class="flex flex-col gap-3 my-8">
-          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-8">
+        <h2 class="text-center lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
+          Festen
+        </h2>
+        <img class="object-contain mb-8" src="lillegard.jpg" alt="Lillegård" />
+        <div class="flex flex-col">
+          <h3 class="lg:text-3xl text-xl font-batang text-neutral-800 mb-4">
             17:00 - Middag och fest på Lillegård
           </h3>
           <div>
             Middag och bröllopsfest hålls ute på den skånska vischan på
             Lillegård. Från kyrkan kommer det gå bussar som alla gäster är
             välkomna att åka med, läs mer om detta under
-            <a href="#detaljer">detaljer/transport</a>.
+            <a class="underline text-sky-900" href="#transport">detaljer/transport</a>.
             På Lillegård serveras bubbel och snittar. Vi (bröllopsparet)
             förväntas anlända vid 16 för en gemensam bröllopsskål. Till bords
             sätter vi oss sedan vid 17.
           </div>
-          <div>
+          <div class="mt-4">
             Lillegård, Fredriksrovägen 85, 244 91, Kävlinge
           </div>
           <div>
-            <a href="https://maps.app.goo.gl/x5zVqA6RTYHtkfLg6">Google Maps</a>
+            <a class="underline text-sky-900" href="https://maps.app.goo.gl/x5zVqA6RTYHtkfLg6">Google Maps</a>
           </div>
         </div>
       </section>
 
-      <section class="relative flex flex-col w-full p-10 bg-white border border-black">
+      <section class="relative flex flex-col w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="detaljer" class="absolute top-[-100px]"></div>
-        <div class="flex flex-col items-center">
-          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
-            Detaljer
-          </h2>
-        </div>
-        <div class="flex flex-col gap-6 my-8">
-          <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-user-tie lg:text-6xl text-4xl text-[#dcafcf]"></i>
-            <div class="">
-              <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-                Klädkod
-              </h3>
-              Att ha kläder är kul. Kanske något fint är ännu roligare.
-            </div>
+        <h2 class="text-center lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
+          Detaljer
+        </h2>
+        <div class="flex flex-col gap-6">
+          <div>
+            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
+              <i class="fa-solid fa-user-tie text-[#dcafcf]"></i>
+              Klädkod
+            </h3>
+            Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
-          <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-bus lg:text-6xl text-4xl text-[#c5d6c5]"></i>
-            <div class="">
-              <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-                Transport
-              </h3>
-              Till vigseln tar ni er enkelt med kollektivtrafik både via buss
-              eller tåg. Efter vigseln har vi hyrt bussar som kommer köra från
-              Lund ut till Lillegård. Att åka med bussen är gratis och ni anmäler
-              ert intresse att åka med när ni OSAr. Hemfärd senare inpå
-              småtimmarna löser ni själva med förslagsvis taxi. Vill ni köra bil
-              själva uppmanar vi till att ni i största mån samåker, framför allt
-              för klimatets skull men även för att det finns begränsat antal
-              parkeringsplatser på Lillegård. 
-            </div>
+          <div class="relative">
+            <div id="transport" class="absolute top-[-100px]"></div>
+            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
+              <i class="fa-solid fa-bus text-[#c5d6c5]"></i>
+              Transport
+            </h3>
+            Till vigseln tar ni er enkelt med kollektivtrafik både via buss
+            eller tåg. Efter vigseln har vi hyrt bussar som kommer köra från
+            Lund ut till Lillegård. Att åka med bussen är gratis och ni anmäler
+            ert intresse att åka med när ni OSAr. Hemfärd senare inpå
+            småtimmarna löser ni själva med förslagsvis taxi. Vill ni köra bil
+            själva uppmanar vi till att ni i största mån samåker, framför allt
+            för klimatets skull men även för att det finns begränsat antal
+            parkeringsplatser på Lillegård. 
           </div>
-          <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-children lg:text-6xl text-4xl text-[#fbcd9a]"></i>
-            <div class="">
-              <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-                Barn
-              </h3>
-              Att ha kläder är kul. Kanske något fint är ännu roligare.
-            </div>
+          <div>
+            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
+              <i class="fa-solid fa-children text-[#fbcd9a]"></i>
+              Barn
+            </h3>
+            Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
-          <div class="flex flex-row items-center gap-4">
-            <i class="flex-none w-20 fa-solid fa-gifts lg:text-6xl text-4xl text-[#c7cae3]"></i>
-            <div class="">
-              <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-                Gåvor
-              </h3>
-              Att ha kläder är kul. Kanske något fint är ännu roligare.
-            </div>
+          <div>
+            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
+              <i class="fa-solid fa-gifts text-[#c7cae3]"></i>
+              Gåvor
+            </h3>
+            Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
         </div>
       </section>
 
-      <section class="relative flex flex-col w-full p-10 bg-white border border-black">
+      <section class="relative flex flex-col w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="gyckel" class="absolute top-[-100px]"></div>
-        <div class="flex flex-col items-center">
-          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
-            Tal och gyckel
-          </h2>
-        </div>
-        <div class="flex flex-col gap-3 my-8">
+        <h2 class="text-center lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
+          Tal och gyckel
+        </h2>
+        <div class="flex flex-col gap-3">
           Hör av er till toastmaster eller toastmadamme!
         </div>
       </section>
 
-      <section class="relative flex flex-col w-full p-10 bg-white border border-black">
+      <section class="relative flex flex-col w-full p-10 bg-white border border-black shadow-md shadow-black/5">
         <div id="osa" class="absolute top-[-100px]"></div>
-        <div class="flex flex-col items-center">
-          <h2 class="lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
-            OSA
-          </h2>
-        </div>
-        <div class="flex flex-col gap-3 my-8">
+        <h2 class="text-center lg:text-5xl text-3xl font-batang text-neutral-800 mb-8">
+          OSA
+        </h2>
+        <div class="flex flex-col gap-3">
           Svara gärna på nedan:
           <ul>
             <li>Ja, vi kommer!</li>
