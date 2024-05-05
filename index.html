@@ -30,7 +30,7 @@
 </style>
 </head>
 <body>
-  <div class="flex flex-col items-center absolute w-full bg-[url('brollop-inbjudan-baksida.png')] bg-contain overflow-x-hidden">
+  <div class="flex flex-col items-center absolute w-full bg-[url('brollop-inbjudan-baksida.png')] bg-contain overflow-x-hidden lg:pt-10 pt-4">
     <nav class="flex flex-row flex-no-wrap lg:gap-8 gap-4 place-content-center fixed top-0 w-full overflow-x-scroll shadow-md shadow-black/5 lg:text-xl text-md bg-white lg:py-4 py-2 px-2 z-10">
         <a class="flex hover:font-bold" href="#start">Start</a>
         <a class="flex hover:font-bold" href="#vigsel">Vigsel</a>
@@ -40,10 +40,10 @@
         <a class="flex hover:font-bold" href="#osa">OSA</a>
     </nav>
     <div class="flex flex-col gap-y-28 max-w-screen-md px-10 py-14 items-center">
-      <header class="relative flex flex-col items-center w-full p-10 bg-white border border-black shadow-md shadow-black/5">
+      <header class="relative flex flex-col items-center w-full p-10 pt-0 bg-white border border-black shadow-md shadow-black/5">
         <div id="start" class="absolute top-[-100px]"></div>
         <img class="" src="viskagiftaoss.png" alt="Vi ska gifta oss" />
-        <h1 class="text-center lg:text-6xl text-2xl font-batang text-neutral-800 my-8">
+        <h1 class="border-b border-[#c7cae3] text-center lg:text-6xl text-2xl font-batang text-neutral-800 pb-2 mb-2">
           OSCAR &amp;&nbsp;LOVISA
         </h1>
         <div class="lg:text-4xl text-xl font-batang text-neutral-700">28 september</div>
@@ -110,18 +110,22 @@
         </h2>
         <div class="flex flex-col gap-6">
           <div>
-            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-              <i class="fa-solid fa-user-tie text-[#dcafcf]"></i>
-              Klädkod
-            </h3>
+            <div class="flex flex-row items-center gap-3 mb-2">
+              <i class="fa-solid fa-user-tie text-xl text-[#dcafcf]"></i>
+              <h3 class="text-2xl font-batang text-neutral-800">
+                Klädkod
+              </h3>
+            </div>
             Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
           <div class="relative">
             <div id="transport" class="absolute top-[-100px]"></div>
-            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-              <i class="fa-solid fa-bus text-[#c5d6c5]"></i>
-              Transport
-            </h3>
+            <div class="flex flex-row items-center gap-3 mb-2">
+              <i class="fa-solid fa-bus text-xl text-[#c5d6c5]"></i>
+              <h3 class="text-2xl font-batang text-neutral-800">
+                Transport
+              </h3>
+            </div>
             Till vigseln tar ni er enkelt med kollektivtrafik både via buss
             eller tåg. Efter vigseln har vi hyrt bussar som kommer köra från
             Lund ut till Lillegård. Att åka med bussen är gratis och ni anmäler
@@ -132,17 +136,21 @@
             parkeringsplatser på Lillegård. 
           </div>
           <div>
-            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-              <i class="fa-solid fa-children text-[#fbcd9a]"></i>
-              Barn
-            </h3>
+            <div class="flex flex-row items-center gap-3 mb-2">
+              <i class="fa-solid fa-children text-xl text-[#fbcd9a]"></i>
+              <h3 class="text-2xl font-batang text-neutral-800">
+                Barn
+              </h3>
+            </div>
             Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
           <div>
-            <h3 class="text-2xl font-batang text-neutral-800 mb-2">
-              <i class="fa-solid fa-gifts text-[#c7cae3]"></i>
-              Gåvor
-            </h3>
+            <div class="flex flex-row items-center gap-3 mb-2">
+              <i class="fa-solid fa-gifts text-xl text-[#c7cae3]"></i>
+              <h3 class="text-2xl font-batang text-neutral-800">
+                Gåvor
+              </h3>
+            </div>
             Att ha kläder är kul. Kanske något fint är ännu roligare.
           </div>
         </div>
@@ -164,10 +172,10 @@
           OSA
         </h2>
         <div class="flex flex-col gap-3">
-          Svara gärna på nedan:
-          <ul>
-            <li>Ja, vi kommer!</li>
-          </ul>
+          Svara på inbjudan här.
+          <div class="text-center">
+          <a href=""><span class="p-4 border border-black shadow-md shadow-black/5">Svarsformulär</span></a>
+          </div>
         </div>
       </section>
     </div>
